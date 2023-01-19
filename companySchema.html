@@ -38,7 +38,7 @@
                     <label class="formLabel" for="">Name</label>
                     <input class="formInput" type="text" placeholder="Name" />
                     <label class="formLabel" for="">Logo</label>
-                    <input class="formInput" type="text" placeholder="Logo" />
+                    <input class="formFile" type="file" />
                     <label class="formLabel" for="">Website</label>
                     <input
                       class="formInput"
@@ -68,29 +68,46 @@
                       type="text"
                       placeholder="Comissions FX perlot"
                     />
-                    <label class="formLabel" for="">MT4</label>
-                    <input class="formInput" type="text" placeholder="MT4" />
-                    <label class="formLabel" for="">MT5</label>
-                    <input class="formInput" type="text" placeholder="MT5" />
-                    <label class="formLabel" for="">Trader</label>
-                    <input class="formInput" type="text" placeholder="Trader" />
-                    <label class="formLabel" for="">Trading View</label>
-                    <input
-                      class="formInput"
-                      type="text"
-                      placeholder="Trading View"
-                    />
+                    <div class="row mt-2">
+                      <div class="col-6">
+                        <label class="formLabel" for="">MT4</label>
+                        <input
+                          class="commonCheckbox"
+                          type="checkbox"
+                          checked=""
+                        />
+                      </div>
+                      <div class="col-6">
+                        <label class="formLabel" for="">MT5</label>
+                        <input class="commonCheckbox" type="checkbox" />
+                      </div>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="col-6">
+                        <label class="formLabel" for="">CTrader</label>
+                        <input
+                          class="commonCheckbox"
+                          type="checkbox"
+                          checked=""
+                        />
+                      </div>
+                      <div class="col-6">
+                        <label class="formLabel" for="">Trading View</label>
+                        <input class="commonCheckbox" type="checkbox" />
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <h2 class="formSubheading mt-3">Social Links</h2>
                 <div class="row">
                   <div class="col-lg-3">
-                    <label class="formLabel" for="">Instagram</label>
-                    <input class="commonCheckbox" type="checkbox" checked />
+                    <label class="formLabel" for=""></label>
+                    <a class="formLinkBtn" href="#">Instagram</a>
+                    <!-- <input class="commonCheckbox" type="checkbox" checked /> -->
                   </div>
                   <div class="col-lg-3">
-                    <label class="formLabel" for="">Facebook</label>
-                    <input class="commonCheckbox" type="checkbox" checked />
+                    <label class="formLabel" for=""></label>
+                    <a class="formLinkBtn" href="#">Facebook</a>
                   </div>
                   <div class="col-lg-3">
                     <label class="formLabel" for="">Twitter</label>
@@ -118,42 +135,38 @@
                   </div>
                   <div class="col-lg-3">
                     <label class="formLabel" for="">Telegram Channel</label>
-                    <input class="commonCheckbox" type="checkbox" />
+                    <input
+                      class="formInput"
+                      type="text"
+                      placeholder="Telegram Channel"
+                    />
                   </div>
                   <div class="col-lg-3">
                     <label class="formLabel" for=""
                       >Telegram Channel Link</label
                     >
-                    <input class="commonCheckbox" type="checkbox" />
+                    <input
+                      class="formInput"
+                      type="text"
+                      placeholder="Telegram Channel Link"
+                    />
                   </div>
                 </div>
                 <h2 class="formSubheading mt-3">More Details</h2>
                 <div class="row">
                   <div class="col-lg-4">
                     <label class="formLabel" for="">Own Mobile App</label>
-                    <input
-                      class="formInput"
-                      type="text"
-                      placeholder="Own Mobile App"
-                    />
+                    <input class="commonCheckbox" type="checkbox" />
                   </div>
                   <div class="col-lg-4">
                     <label class="formLabel" for="">Mobile App Image</label>
-                    <input
-                      class="formInput"
-                      type="text"
-                      placeholder="Mobile App Image"
-                    />
+                    <input class="formFile" type="file" />
                   </div>
                   <div class="col-lg-4">
                     <label class="formLabel" for=""
                       >Acc Inother currencies</label
                     >
-                    <input
-                      class="formInput"
-                      type="text"
-                      placeholder="Acc Inother currencies"
-                    />
+                    <input class="commonCheckbox" type="checkbox" />
                   </div>
                   <div class="col-lg-4">
                     <label class="formLabel" for=""
@@ -167,21 +180,17 @@
                   </div>
                   <div class="col-lg-4">
                     <label class="formLabel" for="">Website Screenshot</label>
-                    <input
-                      class="formInput"
-                      type="text"
-                      placeholder="Website Screenshot"
-                    />
+                    <input class="formFile" type="file" />
                   </div>
                   <div class="col-lg-4">
                     <label class="formLabel" for=""
                       >Websitein Other languages</label
                     >
-                    <input
-                      class="formInput"
-                      type="text"
-                      placeholder="Websitein Other languages"
-                    />
+                    <input class="commonCheckbox" type="checkbox" />
+                  </div>
+                  <div class="col-lg-4">
+                    <label class="formLabel" for="">Dashboard Image</label>
+                    <input class="formFile" type="file" />
                   </div>
                   <div class="col-lg-4">
                     <label class="formLabel" for="">Languages</label>
@@ -195,22 +204,10 @@
                 <h2 class="formSubheading mt-3">User Details</h2>
                 <div class="row">
                   <div class="col-lg-4">
-                    <label class="formLabel" for="">Dashboard Image</label>
-                    <input
-                      class="formInput"
-                      type="text"
-                      placeholder="Dashboard Image"
-                    />
-                  </div>
-                  <div class="col-lg-4">
                     <label class="formLabel" for=""
                       >Customer Support Live Chat</label
                     >
-                    <input
-                      class="formInput"
-                      type="text"
-                      placeholder="Customer Support Live Chat"
-                    />
+                    <input class="commonCheckbox" type="checkbox" />
                   </div>
                   <div class="col-lg-4">
                     <label class="formLabel" for=""
@@ -271,11 +268,7 @@
                   </div>
                   <div class="col-lg-4">
                     <label class="formLabel" for="">CEO Image</label>
-                    <input
-                      class="formInput"
-                      type="text"
-                      placeholder="CEO Image"
-                    />
+                    <input class="formFile" type="file" />
                   </div>
                   <div class="col-lg-4">
                     <label class="formLabel" for="">CEO Country</label>
@@ -287,11 +280,7 @@
                   </div>
                   <div class="col-lg-4">
                     <label class="formLabel" for="">CEO Instagram</label>
-                    <input
-                      class="formInput"
-                      type="text"
-                      placeholder="CEO Instagram"
-                    />
+                    <input class="commonCheckbox" type="checkbox" />
                   </div>
                   <div class="col-lg-4">
                     <label class="formLabel" for="">CEO Instagram Link</label>
